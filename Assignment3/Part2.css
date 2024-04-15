@@ -2,13 +2,19 @@ html {
     font-family: sans-serif;
   }
   
+  body {
+    background-color: #f8f8f8;
+  }
+
   div {
     width: 200px;
-    height: 200px;
-    background-color: #f0f0f0;
+    height: 200px; 
+    background-color: red; 
     border: 2px solid #333;
     text-align: center;
     line-height: 200px;
     margin: 20px auto;
     font-size: 1.125rem;
-  }
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
