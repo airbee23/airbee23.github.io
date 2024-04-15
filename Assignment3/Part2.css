@@ -2,4 +2,13 @@ html {
     font-family: sans-serif;
   }
   
-  /* Your CSS below here */
+  div {
+    width: 200px;
+    height: 200px; /* Adjust height as needed */
+    background-color: #f0f0f0; /* Light gray background */
+    border: 2px solid #333; /* Dark border */
+    text-align: center; /* Center text horizontally */
+    line-height: 200px; /* Center text vertically */
+    margin: 20px auto; /* Center the box horizontally with some space around it */
+    font-size: 18px; /* Adjust font size as needed */
+}
