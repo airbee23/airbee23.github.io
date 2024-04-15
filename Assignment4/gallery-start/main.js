@@ -12,9 +12,15 @@ const altTexts = ['Closeup of a human eye', 'Some other description', 'Picture o
 
 /* Looping through images */
 
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
+for (let i = 0; i < imageFilenames.length; i++) {
+    const newImage = document.createElement('img');
+    newImage.setAttribute('src', 'images/' + imageFilenames[i]);
+    newImage.setAttribute('alt', altTexts[i]);
+    thumbBar.appendChild(newImage);
+    newImage.addEventListener('click', function() {
+      displayedImage.src = this.src;
+      displayedImage.alt = this.alt;
+    });
+  }
 
 /* Wiring up the Darken/Lighten button */
