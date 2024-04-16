@@ -24,3 +24,13 @@ for (let i = 0; i < imageFilenames.length; i++) {
   }
 
 /* Wiring up the Darken/Lighten button */
+btn.addEventListener('click', function() {
+    const currentOpacity = parseFloat(overlay.style.backgroundColor.split(',')[3]);
+    if (currentOpacity === 0) {
+      overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
+      btn.textContent = 'Lighten';
+    } else {
+      overlay.style.backgroundColor = 'rgba(0,0,0,0)';
+      btn.textContent = 'Darken';
+    }
+  });
